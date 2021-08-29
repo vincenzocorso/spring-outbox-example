@@ -1,1 +1,3 @@
 rootProject.name = 'spring-outbox-example'
+
+include 'todos-service'

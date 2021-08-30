@@ -1,3 +1,4 @@
 rootProject.name = 'spring-outbox-example'
 
+include 'custom-debezium-transformer'
 include 'todos-service'

@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:connect-api:2.8.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
+}

@@ -12,6 +12,11 @@ import org.apache.kafka.connect.transforms.Transformation;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Custom smt transformer for RDBMS Debezium Connectors.
+ *
+ * @author Vincenzo Corso
+ */
 public class CustomTransformer<R extends ConnectRecord<R>> implements Transformation<R> {
 	private static final ObjectMapper objectMapper = new ObjectMapper();
 

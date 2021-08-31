@@ -15,6 +15,11 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Custom smt transformer for the Debezium MongoDB connector.
+ *
+ * @author Vincenzo Corso
+ */
 public class CustomMongoTransformer<R extends ConnectRecord<R>> implements Transformation<R> {
 	private static final Logger log = LoggerFactory.getLogger(CustomMongoTransformer.class.getName());
 	private static final ObjectMapper objectMapper = new ObjectMapper();

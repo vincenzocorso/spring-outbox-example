@@ -1,4 +1,4 @@
-package it.vincenzocorso.tasksservice.presentation;
+package it.vincenzocorso.tasksservice.presentation.web;
 
 import it.vincenzocorso.tasksservice.domain.DomainEvent;
 import it.vincenzocorso.tasksservice.domain.Task;

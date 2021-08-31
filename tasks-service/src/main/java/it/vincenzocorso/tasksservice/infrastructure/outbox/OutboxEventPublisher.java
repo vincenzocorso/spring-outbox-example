@@ -28,9 +28,11 @@ public class OutboxEventPublisher {
 			String encodedHeaders = this.objectMapper.writeValueAsString(headers);
 			outboxEvent.setHeaders(encodedHeaders);
 
-			this.outboxEventRepository.save(outboxEvent);
+			OutboxEvent savedOutboxEvent = this.outboxEventRepository.save(outboxEvent);
+			this.outboxEventRepository.delete(savedOutboxEvent);
 		} catch (Exception ex) {
 			log.error("An error occurred during event publishing: ", ex);
+			throw new RuntimeException(ex);
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package it.vincenzocorso.todosservice.presentation;
+package it.vincenzocorso.todosservice.presentation.web;
 
 import it.vincenzocorso.todosservice.domain.DomainEvent;
 import it.vincenzocorso.todosservice.domain.Todo;

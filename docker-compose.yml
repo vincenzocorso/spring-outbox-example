@@ -114,7 +114,7 @@ services:
       - "8081:8080"
     depends_on:
       - kafka
-      - mongo
+      - mongodb-primary
     environment:
       MONGODB_URI: mongodb://root:admin@mongodb-primary:27017/db?authSource=admin
       KAFKA_BOOSTRAP_SERVERS: kafka:9092

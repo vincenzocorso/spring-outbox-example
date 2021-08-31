@@ -1,0 +1,17 @@
+{
+  "name": "tasks-service-debezium-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mongodb.MongoDbConnector",
+    "tasks.max": "1",
+    "mongodb.hosts": "rs0/mongodb-primary:27017",
+    "mongodb.name": "tasks-service-outbox-server",
+    "mongodb.user": "root",
+    "mongodb.password": "admin",
+    "mongodb.authsource": "admin",
+    "mongodb.members.auto.discover": "false",
+    "collection.include.list": "db[.]outbox",
+    "tombstones.on.delete": "false",
+    "transforms": "outbox",
+    "transforms.outbox.type": "it.vincenzocorso.debezium.smt.CustomMongoTransformer"
+  }
+}

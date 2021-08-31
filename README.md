@@ -33,7 +33,7 @@ Now from the root folder:
 ```shell
 gradlew build jibDockerBuild
 docker-compose up --build
-./register-all-connectors.sh # To register all debezium connector
+./register-all-connectors.sh # Register all the debezium connectors
 ./create-todo.sh # Send a request to the Todos Service
 ./create-task.sh # Send a request to the Tasks Service
 ```

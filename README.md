@@ -31,7 +31,7 @@ You must have Docker and Docker Compose installed.
 
 Now from the root folder:
 ```shell
-gradlew build jibDockerBuild
+./gradlew build jibDockerBuild
 docker-compose up --build
 ./register-all-connectors.sh # Register all the debezium connectors
 ./create-todo.sh # Send a request to the Todos Service

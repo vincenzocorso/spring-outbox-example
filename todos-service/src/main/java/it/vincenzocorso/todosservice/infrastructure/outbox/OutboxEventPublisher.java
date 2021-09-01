@@ -32,6 +32,7 @@ public class OutboxEventPublisher {
 			this.outboxEventRepository.delete(savedOutboxEvent);
 		} catch (Exception ex) {
 			log.error("An error occurred during event publishing: ", ex);
+			throw new RuntimeException(ex);
 		}
 	}
 }
